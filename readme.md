@@ -1,6 +1,6 @@
 # Technology Shopping Website
 
-![Website Preview](https://my-simple-ecommerce.netlify.app/)
+[Website Preview](https://my-simple-ecommerce.netlify.app)
 
 
 
