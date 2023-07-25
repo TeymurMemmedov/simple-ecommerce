@@ -1,0 +1,135 @@
+/* CSS Variables */
+
+:root {
+    --slide-width:1296;
+    --slide-height:500;
+  }
+
+/* reset */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+#slider{
+    width: calc(var(--slide-width)*1px);
+    height: calc(var(--slide-height)*1px);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+/* slider-controls styles */
+.slider-controls{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+.slider-controls a:nth-child(1){
+    pointer-events: none;
+}
+.slider-controls a:nth-child(1){
+    pointer-events: none;
+}
+.slider-controls a:nth-child(1) i{
+    color: #abb8c3;
+}
+
+.slider-controls i{
+    font-size: 2.5em;
+    color: #373a36;
+}
+
+/* slider-dots styles */
+.slider-dots{
+    width: inherit;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+
+}
+.slider-dots span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: gray;
+    cursor: pointer;
+}
+.active-ball {
+    background-color: black  !important;
+    transition: all 0.5s linear;
+}
+
+
+/* slides-container styles */
+.slides-container{
+    display: flex;
+    height: inherit;
+    transition: all 1s ease;
+    width: calc(var(--slide-count)* (var(--slide-width) * 1px));
+
+}
+/* slide styles */
+.slide{
+    border: 2px solid black;
+    height: inherit;
+    width: calc(var(--slide-width)*1px);
+}/* CSS Variables */
+
+
+
+.product-header{
+    border-bottom: 1px solid gray;
+    margin: 20px 0px;
+}
+
+#product-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card{
+    width: calc((var(--slide-width)/3)*1px);
+    max-height: 450px;
+}
+
+.card-body{
+   padding-bottom:  0px;
+   padding-top: 0px;
+}
+
+.card img{
+ height: 60%;
+ object-fit: contain;
+}
+
+.shopping-card{
+    margin-top: 20px;
+}
+
+.shopping-card-header{
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+}
+
+#shoppingCard i {
+    color: red;
+    font-size: 1.5em;
+    
+}
+
+
+
